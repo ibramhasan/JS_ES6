@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2020 by ibramhasan (http://jsbin.com/rihasew/8/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<body>
+
+<script id="jsbin-javascript">
+var objek= {
+    "status": true,
+    "data": [
+        {
+            "id": 6,
+            "id_product": 20012003,
+            "product_name": "Fresh Food",
+            "price": 35500,
+            "made_at": "2017-12-22",
+            "expired": "2018-12-21",
+            "created_at": "2020-02-13 07:20:57",
+            "updated_at": "2020-02-13 07:20:57"
+        },
+        {
+            "id": 7,
+            "id_product": 14022001,
+            "product_name": "Fast Food",
+            "price": 13500,
+            "made_at": "2012-08-23",
+            "expired": "2016-12-02",
+            "created_at": "2020-02-14 02:00:36",
+            "updated_at": "2020-02-14 02:00:36"
+        },
+    ]
+}
+// const days = ["senin", "selasa", "rabu"];
+
+// days.forEach(obj => {
+//   console.log(obj); // senin selasa rabu
+// });
+
+// for(let product of Object.keys(obj)){
+//   var data=obj[product];
+//   console.log(data, product)
+// }
+
+for (var [data, product] of Object.entries(objek))
+    console.log(data, product);
+
+
+
+// for(let i=0; i<obj.data.length; i++){
+//   console.log(obj.data[i].made_at)
+// }
+</script>
+</body>
+</html>
