@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2020 by ibramhasan (http://jsbin.com/simewih/5/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<body>
+
+<script id="jsbin-javascript">
+// oop js_es6
+
+class Hewan{
+  constructor(nama){
+    this.nama= nama;
+  }
+  
+  suara(){
+    console.log('Graaar')
+  }
+  
+  kenalan(){
+    console.log('nama saya ${this.nama}')
+  }
+  
+  jumlahKaki(){
+    console.log(4)
+  }
+  
+  static sapa(){
+    console.log('Hellooo')
+  }
+}
+
+// inheritance
+
+class Kucing extends Hewan{
+  constructor(nama){
+    super(nama)
+  }
+  
+  suara(){
+    console.log('meoww')
+  }
+}
+
+var animal= new Hewan('heli')
+  animal.suara()
+  animal.kenalan()
+  animal.jumlahKaki()
+  
+var cat= new Kucing('helo')
+  cat.suara()
+  cat.kenalan()
+  cat.jumlahKaki()
+  
+Hewan.sapa()
+</script>
+</body>
+</html>
