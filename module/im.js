@@ -1,2 +1,3 @@
-import Whatever from './module/ek';
-Whatever('Toyota').drive();
+import * as math from "module/im.js";
+
+console.log(`2phi= math.tambah(math.pi, math.pi)`);

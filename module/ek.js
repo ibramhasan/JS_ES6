@@ -1,9 +1,4 @@
 //file: module/ek.js
-export default (brand) => (
-    {
-      brand: brand,
-      drive() {
-        console.log(this.brand, ' drive');
-      }
-    }
-  )
+export function add(x,y) => x + y;
+export var pi= 3.5;
+export function min(x,y) => x - y;

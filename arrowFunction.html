@@ -1,0 +1,87 @@
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2020 by ibramhasan (http://jsbin.com/fewewot/7/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html>
+<head>
+<title>Test</title>
+<script language="javascript">
+function buka(){
+var x = window.open('anak.html', 'newWindow', 'height=300,width=300');
+}
+</script>
+</head>
+<body>
+<form name=formulir>
+<INPUT type=button value="buka window" name=submit1 onClick="buka();">
+<input type=text name=kotak id=kotak>
+</form>
+</body>
+</html>
+  
+<html>
+<head>
+<title>testing</title>
+<script language=javascript>
+function setInduk(){
+window.opener.document.getElementById("kotak").value =
+document.getElementById("inputan").value;
+}
+</script>
+</head>
+<body>
+<form name=myForm>
+<input type=text name="inputan" id="inputan">
+<input type=button value="Click Me" onClick="setInduk();">
+</form>
+<script id="jsbin-javascript">
+// function Scope
+function looping(){
+   for(var i=0;i<=3; i++){
+     console.log(i)
+   }
+}
+looping();
+
+// block scope
+for (let i=0; i<=4;i++){
+  console.log(i)
+}
+
+// arrow function
+
+
+//contoh 1
+const func1 = function(a, b) {
+  return a + b;
+};
+console.log(func1(3, 3));
+
+//contoh 2
+const func2 = (a, b) => {
+  return a + b;
+};
+console.log(func2(3, 3));
+
+//contoh 3
+const func3 = (a, b) => a + b;
+console.log(func3(3, 3));
+
+const func= (x,y) => x-y;
+console.log(func(6,4));
+
+//contoh 4
+const func4 = (dobel) => dobel + dobel;
+console.log(func4(5));
+
+//contoh 5
+const func5 = dobel => dobel + dobel;
+console.log(func5(5));
+</script>
+</body>
+</html>
